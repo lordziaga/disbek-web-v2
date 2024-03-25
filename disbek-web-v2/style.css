@@ -1,0 +1,103 @@
+/**
+ * copyright 2023 @lordziaga
+ */
+
+/*--------------------------------*\
+  #CUSTOM PROPERTY
+\*--------------------------------*/
+
+:root {
+	--red-cmyk: #fc0020ff;
+	--harvest-gold: #e4ab11ff;
+	--drab-dark-brown: #383009ff;
+	--canary: #ffec18ff;
+	--snow: #fdf7f7ff;
+	--denim: #0060c7ff;
+}
+
+@media (max-width: 576px) {
+	html {
+		font-size: 0.8rem; /* Adjust font size for smaller screens */
+	}
+
+	.background-header {
+		height: 300px; /* Adjust header height for smaller screens */
+	}
+
+	.img-footer {
+		width: 100%; /* Make footer image fluid for smaller screens */
+	}
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+	html {
+		font-size: 1rem; /* Reset font size for medium screens */
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+	html {
+		font-size: 1.1rem; /* Adjust font size for large screens */
+	}
+}
+
+nav {
+	background-color: var(--harvest-gold);
+}
+
+body {
+	padding-top: 100px;
+}
+
+.jumbotron {
+	background-color: var(--drab-dark-brown);
+}
+.background-header {
+	background-image: url('resource/TNI-AL.jpg');
+	border-image: fill 0 linear-gradient(#000, #0001);
+	background-color: aliceblue;
+	height: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#service {
+	background-color: var(--red-cmyk);
+	color: var(--snow);
+}
+#product {
+	background-color: var(--snow);
+	color: var(--drab-dark-brown);
+}
+#about {
+	background-color: var(--red-cmyk);
+	color: var(--snow);
+}
+#contact {
+	background-color: var(--snow);
+	color: var(--drab-dark-brown);
+}
+
+footer {
+	background-color: var(--denim);
+}
+
+.img-footer {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	width: 1350px;
+}
+
+.info,
+.info-item {
+	background-color: var(--canary);
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
