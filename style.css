@@ -17,27 +17,32 @@
 
 @media (max-width: 576px) {
 	html {
-		font-size: 0.8rem; /* Adjust font size for smaller screens */
+		font-size: 0.8rem;
+		/* Adjust font size for smaller screens */
 	}
 
 	.background-header {
-		height: 300px; /* Adjust header height for smaller screens */
+		height: 300px;
+		/* Adjust header height for smaller screens */
 	}
 
 	.img-footer.img-thumbnail {
-		width: 100%; /* Make footer image fluid for smaller screens */
+		width: 100%;
+		/* Make footer image fluid for smaller screens */
 	}
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
 	html {
-		font-size: 1rem; /* Reset font size for medium screens */
+		font-size: 1rem;
+		/* Reset font size for medium screens */
 	}
 }
 
 @media (min-width: 992px) and (max-width: 1350px) {
 	html {
-		font-size: 1.1rem; /* Adjust font size for large screens */
+		font-size: 1.1rem;
+		/* Adjust font size for large screens */
 	}
 }
 
@@ -48,6 +53,7 @@ nav {
 .jumbotron {
 	background-color: var(--drab-dark-brown);
 }
+
 .background-header {
 	background-image: url('resource/TNI-AL.jpg');
 	border-image: fill 0 linear-gradient(#000, #0001);
@@ -60,7 +66,7 @@ nav {
 }
 
 #service {
-	background-color: rgb(255, 238, 238);
+	background-color: rgb(236, 242, 255);
 	margin-top: 15px;
 }
 
@@ -71,17 +77,18 @@ nav {
 }
 
 #about {
-	background-color: rgb(255, 238, 238);
+	background-color: rgb(236, 242, 255);
 	margin-top: 15px;
 }
+
 #contact {
-	background-color: rgb(255, 255, 255);
 	color: var(--drab-dark-brown);
 	margin-top: 15px;
 }
 
 footer {
 	margin-top: 15px;
+	background-color: var(--harvest-gold);
 }
 
 .img-footer {
@@ -108,7 +115,7 @@ li {
 }
 
 .blank {
-	background-color: rgb(255, 238, 238);
+	background-color: rgb(233, 233, 233);
 }
 
 .j-c {
@@ -121,11 +128,12 @@ li {
 
 
 h2.display-3 {
-    overflow: hidden; /* Memastikan konten tidak keluar dari batas container */
-    white-space: nowrap; /* Mencegah teks pindah ke baris baru */
+	/* overflow: hidden; Memastikan konten tidak keluar dari batas container */
+	white-space: nowrap;
+	/* Mencegah teks pindah ke baris baru */
 }
 
-h2:before, 
+h2:before,
 h2:after {
 	background-color: var(--denim);
 	content: "";
@@ -140,7 +148,8 @@ h2::before {
 	right: 0.5em;
 	margin-left: -50%;
 }
+
 h2::after {
 	left: 0.5em;
-    margin-right: -50%;
+	margin-right: -50%;
 }
