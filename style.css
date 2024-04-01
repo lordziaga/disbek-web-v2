@@ -127,8 +127,14 @@ li {
 }
 
 
-h2.display-3 {
-	/* overflow: hidden; Memastikan konten tidak keluar dari batas container */
+.h2 {
+	/* overflow: hidden; */
+	white-space: nowrap;
+	/* Mencegah teks pindah ke baris baru */
+}
+
+.display-3 {
+	overflow: hidden;
 	white-space: nowrap;
 	/* Mencegah teks pindah ke baris baru */
 }
