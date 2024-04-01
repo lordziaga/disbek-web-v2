@@ -24,7 +24,7 @@
 		height: 300px; /* Adjust header height for smaller screens */
 	}
 
-	.img-footer {
+	.img-footer.img-thumbnail {
 		width: 100%; /* Make footer image fluid for smaller screens */
 	}
 }
@@ -45,10 +45,6 @@ nav {
 	background-color: var(--harvest-gold);
 }
 
-body {
-	padding-top: 100px;
-}
-
 .jumbotron {
 	background-color: var(--drab-dark-brown);
 }
@@ -64,24 +60,28 @@ body {
 }
 
 #service {
-	background-color: var(--red-cmyk);
-	color: var(--snow);
+	background-color: rgb(255, 238, 238);
+	margin-top: 15px;
 }
+
 #product {
-	background-color: var(--snow);
+	background-color: rgb(255, 255, 255);
 	color: var(--drab-dark-brown);
+	margin-top: 15px;
 }
+
 #about {
-	background-color: var(--red-cmyk);
-	color: var(--snow);
+	background-color: rgb(255, 238, 238);
+	margin-top: 15px;
 }
 #contact {
-	background-color: var(--snow);
+	background-color: rgb(255, 255, 255);
 	color: var(--drab-dark-brown);
+	margin-top: 15px;
 }
 
 footer {
-	background-color: var(--denim);
+	margin-top: 15px;
 }
 
 .img-footer {
@@ -94,10 +94,53 @@ footer {
 
 .info,
 .info-item {
-	background-color: var(--canary);
-	list-style-type: none;
+	background-color: rgba(182, 182, 185, 0.178);
+	/* padding-bottom: 1rem; */
+	padding-top: 1rem;
 }
 
 li {
 	list-style-type: none;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.blank {
+	background-color: rgb(255, 238, 238);
+}
+
+.j-c {
+	justify-content: center;
+}
+
+.text-blue {
+	color: var(--denim);
+}
+
+
+h2.display-3 {
+    overflow: hidden; /* Memastikan konten tidak keluar dari batas container */
+    white-space: nowrap; /* Mencegah teks pindah ke baris baru */
+}
+
+h2:before, 
+h2:after {
+	background-color: var(--denim);
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}
+
+h2::before {
+	right: 0.5em;
+	margin-left: -50%;
+}
+h2::after {
+	left: 0.5em;
+    margin-right: -50%;
 }
